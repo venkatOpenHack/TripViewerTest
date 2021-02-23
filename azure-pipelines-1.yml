@@ -19,3 +19,7 @@ steps:
   inputs:
     command: 'build'
     workingDirectory: 'apis/poi/'
+- task: DotNetCoreCLI@2
+  inputs:
+    command: 'test'
+    workingDirectory: 'apis/poi/tests/UnitTests/'
