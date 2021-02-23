@@ -27,3 +27,9 @@ steps:
   inputs:
     command: 'test'
     workingDirectory: 'apis/poi/tests/UnitTests/'
+- task: CreateWorkItem@1
+  inputs:
+    workItemType: 'Bug'
+    title: 'FailedBuid'
+    assignedTo: 'hacker5znn@OTAPRD1310ops.onmicrosoft.com'
+    associate: true
